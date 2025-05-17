@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TECHBUZZ BY HASSAN</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url('https://via.placeholder.com/1600x900');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: black;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #36755b;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo h1 {
+      font-family: 'Georgia', serif;
+      font-size: 2.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: rgb(49, 35, 35);
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .products {
+      background-color: #9fb1a2;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .products h2 {
+      font-size: 2.5rem;
+      margin: 40px 0 20px;
+      color: rgb(0, 0, 0);
+    }
+
+    .products-items {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .product-row {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .products-item {
+      width: 45%;
+      background-color: #757373;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .products-item img {
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .products-item img:hover {
+      transform: scale(1.1);
+    }
+
+    .add-to-cart, .buy-now {
+      display: block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .add-to-cart {
+      background-color: #ff8c00;
+      color: white;
+    }
+
+    .add-to-cart:hover {
+      background-color: #967259;
+    }
+
+    .buy-now {
+      background-color: #ff5a00;
+      color: white;
+    }
+
+    .buy-now:hover {
+      background-color: #d9534f;
+    }
+
+    .about {
+      padding: 80px 20px;
+      color: white;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .about h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .contact {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #776363;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #749eb3;
+      border-radius: 10px;
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact form input, .contact form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #000;
+      border-radius: 8px;
+    }
+
+    .contact form button {
+      padding: 15px 30px;
+      background-color: #ff8c00;
+      color: white;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>TECHBUZZ BY HASSAN</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <img src="banner (1).png" alt="Banner Image">
+  </section>
+
+ <section id="products" class="products">
+    <h2>COMPUTERS AND ACCESSORIES</h2>
+
+    <div class="products-items">
+      <div class="product-row">
+        <div class="products-item">
+          <img src="product1.jpeg" alt="Asus Rog Strix screen">
+          <h3>Asus Rog Strix screen</h3>
+          <p>Sleek bezel-less QHD monitor with 165Hz refresh rate and 1ms response time.</p>
+          <p>Rs 45,000</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product7.jpeg" alt="ASUS ROG Strix XG49VQ">
+          <h3>ASUS ROG Strix XG49VQ 49"</h3>
+          <p>Curved ultra-wide 49-inch gaming monitor with HDR and 165Hz refresh rate.</p>
+          <p>Rs 279,999</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product19.jpeg" alt="Corsair iCUE 4000X RGB – White">
+          <h3>Corsair iCUE 4000X RGB – White</h3>
+          <p>Elegant mid-tower case with triple RGB fans and tempered glass.</p>
+          <p>Rs 13,999</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product13.jpeg" alt="Black RGB Gaming PC Case">
+          <h3>Black RGB Gaming PC Case</h3>
+          <p>Mesh front panel with 4 built-in RGB fans for airflow and cable management.</p>
+          <p>Rs 8,500</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product18.jpeg" alt="Pinkeyton TKL RGB Mechanical Keyboard – White">
+          <h3>Pinkeyton TKL RGB Mechanical Keyboard – White</h3>
+          <p>Sleek tenkeyless design with vibrant RGB backlight and tactile switches. Perfect blend of aesthetics and gaming performance.</p>
+          <p>Rs 5,200</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product24.jpeg" alt="Redragon K552 Kumara RGB Mechanical Keyboard – Black">
+          <h3>Redragon K552 Kumara RGB Mechanical Keyboard – Black</h3>
+          <p>Compact and durable with clicky blue switches and dynamic rainbow backlight. Built tough for intense gaming.</p>
+          <p>Rs 4,200</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product9.jpeg" alt="Z-16 RGB Wired Gaming Mouse">
+          <h3>Z-16 RGB Wired Gaming Mouse</h3>
+          <p>Stylish wired gaming mouse with vibrant RGB lighting, ergonomic design, and high-precision optical sensor. Ideal for intense gaming sessions and futuristic setups.
+          </p>
+          <p>Rs 2,499</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product12.jpeg" alt="7 Colors RGB Extended Gaming Mouse Pad">
+          <h3>7 Colors RGB Extended Gaming Mouse Pad</h3>
+          <p>Large-size mouse pad with 7 dynamic RGB lighting modes including Ice Blue, Yellow, Purple, and more. Perfect for gamers who want style and smooth control during gameplay.
+          </p>
+          <p>Rs 1,999</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product11.jpeg" alt="ZIUMIER ZM-1 RGB Gaming Headset with Mic">
+          <h3>ZIUMIER ZM-1 RGB Gaming Headset with Mic</h3>
+          <p>Over-ear headset with vibrant RGB lights, noise-isolating microphone, and ultra-soft memory foam cushions. Designed for immersive sound in gaming, compatible with PC, PS5, and Xbox.
+          </p>
+          <p>Rs 5,499</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product17.jpeg" alt="Ergonomic Gaming Chair – Premium Comfort">
+          <h3>Ergonomic Gaming Chair – Premium Comfort</h3>
+          <p>High-back ergonomic gaming chair with adjustable armrests, lumbar support, very comfortable and premium PU leather finish. Ideal for long gaming or work sessions, offering both comfort and style with a sporty look.
+          </p>
+          <p>Rs 38,500</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product10.jpeg" alt="Redragon CCW-3000 black 360mm ARGB Liquid Cooler">
+          <h3>Redragon CCW-3000 black 360mm ARGB Liquid Cooler</h3>
+          <p>High-performance 360mm AIO liquid cooler with 3x ARGB fans and a sleek black design. Designed for powerful CPUs and stylish builds, it delivers efficient cooling with vibrant lighting effects.
+          </p>
+          <p>Rs 25,500</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product25.jpeg" alt="Redragon CCW-3000 White ARGB Liquid Cooler (360mm)">
+          <h3>Redragon CCW-3000 white ARGB Liquid Cooler (360mm)</h3>
+          <p>High-end white liquid cooler with 360mm radiator and triple ARGB fans. Ideal for elite gaming rigs and overclocked systems. Delivers silent, efficient cooling with dynamic RGB effects.
+          </p>
+          <p>Rs 25,500</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+
+    <h2>PS5 AND ACCESSORIES</h2>
+
+    <div class="products-items">
+      <div class="product-row">
+        <div class="products-item">
+          <img src="product14.jpeg" alt="Sony PlayStation 5 – Standard Edition (Disk Version)">
+          <h3>Sony PlayStation 5 – Standard Edition (Disk Version)</h3>
+          <p>Experience ultra-fast loading, stunning 4K visuals, and next-gen gaming with the PS5. Comes with a disk drive, DualSense controller, and support for exclusive titles like Spider-Man, God of War, and more.</p>
+          <p>Rs 185,000</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product15.jpeg" alt="Sony DualSense Wireless Controller – White (PS5)">
+          <h3>Sony DualSense Wireless Controller – White (PS5)</h3>
+          <p>Official PS5 DualSense controller with haptic feedback, adaptive triggers, and built-in mic. Offers immersive gameplay with precise controls and futuristic design.</p>
+          <p>Rs 22,500</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product16.jpeg" alt="PS5 Blue Abstract Art Cover – Limited Edition">
+          <h3>PS5 Blue Abstract Art Cover – Limited Edition</h3>
+          <p>Stylish PS5 faceplate with a bold blue abstract design. Crafted for the disk edition console, this limited edition cover gives your setup a unique and artistic vibe. Comes with matching controller skin for full aesthetic impact.</p>
+          <p>Rs 5,200</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product20.jpeg" alt="Marvel's Spider-Man: Miles Morales – PS5">
+          <h3>Marvel's Spider-Man: Miles Morales – PS5</h3>
+          <p>Step into the shoes of Miles Morales and swing through New York in this action-packed Marvel adventure. Featuring next-gen graphics and intense combat, it’s a must-play for Spider-Man fans.</p>
+          <p>Rs 8,499</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product26.jpeg" alt="Demon’s Souls – PS5">
+          <h3>Demon’s Souls – PS5</h3>
+          <p>A brutal and beautifully remade classic where you fight through a dark fantasy world filled with monstrous foes and epic boss battles. For fans of hardcore RPG experiences.
+          </p>
+          <p>Rs 9,999</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product21.jpeg" alt="Stellar Blade – PS5">
+          <h3>Stellar Blade – PS5</h3>
+          <p> A stunning action sci-fi RPG featuring fast-paced combat and cinematic visuals. Play as Eve in a battle to save humanity from mysterious alien threats.
+          </p>
+          <p>Rs 10,499</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+
+
+    <h2>MOBILE AND ACCESSORIES</h2>
+
+    <div class="products-items">
+      <div class="product-row">
+        <div class="products-item">
+          <img src="product3.jpeg" alt="Apple iPhone 13 Pro Max – PTA Approved (256GB)">
+          <h3>Apple iPhone 13 Pro Max – PTA Approved (256GB)</h3>
+          <p>Experience power and elegance with the iPhone 13 Pro Max. Featuring a stunning Super Retina XDR display, A15 Bionic chip, Pro camera system, and massive 256GB storage — all PTA approved and ready for use in Pakistan. Available in multiple elegant colors.All colors are Available.</p>
+          <p>Rs 305,000</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product6.jpeg" alt="Military Shockproof MagSafe Case for iPhone 13 Pro Max (with Ring Holder)">
+          <h3>Military Shockproof MagSafe Case for iPhone 13 Pro Max (with Ring Holder)</h3>
+          <p>Rugged and stylish protective case designed for iPhone 13 Pro Max. Features MagSafe compatibility, built-in metal ring holder/kickstand, shock-absorbing corners, and a durable back for full drop protection. Perfect for everyday rough use with a masculine edge.
+          </p>
+          <p>Rs 2,599</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product22.jpeg" alt="Apple iPhone 14 Pro Max – PTA Approved (256GB)">
+          <h3>Apple iPhone 14 Pro Max – PTA Approved (256GB)</h3>
+          <p>Upgrade to next-level performance with the iPhone 14 Pro Max. Boasting a powerful A16 Bionic chip, Dynamic Island display, Pro camera system, and 256GB storage. Fully PTA approved and available in stunning colors — premium design meets unmatched performance.All colors are available.</p>
+          <p>Rs 370,000</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product4.jpeg" alt="iPhone 14 Pro Max Rugged Armor MagSafe Case with Camera Slide Cover & Ring Kickstand – Black">
+          <h3>iPhone 14 Pro Max Rugged Armor MagSafe Case with Camera Slide Cover & Ring Kickstand – Black</h3>
+          <p> Heavy-duty protective case designed for iPhone 14 Pro Max. Features MagSafe compatibility, sliding camera cover for lens protection, 360° rotatable ring holder that doubles as a kickstand, and a rugged matte-finish body. Ideal for users who want military-grade protection with practical features and masculine style.
+          </p>
+          <p>Rs 2,999</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+      </div>
+        <div class="products-item">
+          <img src="product23.jpeg" alt=" Apple iPhone 15 Pro Max – PTA Approved (256GB)">
+          <h3> Apple iPhone 15 Pro Max – PTA Approved (256GB)</h3>
+          <p>Sleek design, Titanium finish, A17 Pro chip, and a powerhouse camera – the iPhone 15 Pro Max offers top-tier performance in a lightweight body. PTA approved with 256GB storage, it’s built for both productivity and play.All colors are available.</p>
+          <p>Rs 460,000</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product2.jpeg" alt="iPhone 15 Pro Max Military Armor Ring Case – MagSafe Compatible (Olive Green)">
+          <h3>iPhone 15 Pro Max Military Armor Ring Case – MagSafe Compatible (Olive Green)</h3>
+          <p> Tough and stylish case for iPhone 15 Pro Max, built with shock-absorbing corners and a rugged armored look. Comes with MagSafe compatibility, a built-in 360° ring holder/kickstand, and raised edges for screen & camera protection. Perfect for guys who want full protection with bold attitude — now in a badass olive green finish.
+          </p>
+          <p>Rs 3,500</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+      </div>
+        <div class="products-item">
+          <img src="product8.jpeg" alt="iPhone 16 Pro Max – PTA Approved (256GB)">
+          <h3>iPhone 16 Pro Max – PTA Approved (256GB)</h3>
+          <p>The all-new iPhone 16 Pro Max redefines flagship experience – featuring the blazing fast A18 chip, AI-enhanced camera system, and next-level battery life. 256GB storage & PTA approved, it’s made for those who want the best.All colors are available.</p>
+          <p>Rs 520,000</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="products-item">
+          <img src="product5.jpeg" alt="iPhone 16 Pro Max Rugged Magnetic Ring Armor Case – Shockproof Black Edition">
+          <h3>iPhone 16 Pro Max Rugged Magnetic Ring Armor Case – Shockproof Black Edition</h3>
+          <p> Future-ready rugged armor case for iPhone 16 Pro Max. Designed with shockproof edges, MagSafe magnetic ring for easy mounting/charging, and a 360° rotatable kickstand ring. Built for ultimate grip and drop protection, this matte black beast is perfect for guys who like bold gear with tactical vibes.</p>
+          <p>Rs 3,899</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+      </div>
+      </div>
+  </section>
+
+    <section id="about" class="about">
+    <h2>About Us</h2>
+    <img src="aboutus.jpg.jpeg" alt="About Hassan’s Creations">
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>
